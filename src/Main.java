@@ -34,7 +34,7 @@ public class Main {
         if (delDist >= 60 && delDist < 100) {
             daySum = 3;
         }
-            return daySum;
+        return daySum;
     }
     public static void main(String[] args) {
         System.out.println("Hello, World!");
