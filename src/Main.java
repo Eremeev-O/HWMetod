@@ -25,20 +25,16 @@ public class Main {
     // метод для задания №3
     public static int deliveryTime ( int delDist) {
         int daySum = 0;
-        if (delDist < 100 ) {
-            if (delDist < 20) {
-                daySum = 1;
-            }
-            if (delDist >= 20 && delDist < 60) {
-                daySum = 2;
-            }
-            if (delDist >= 60 && delDist < 100) {
-                daySum = 3;
-            }
-            return daySum;
-        } else {
-            return 0;
+        if (delDist < 20) {
+            daySum = 1;
         }
+        if (delDist >= 20 && delDist < 60) {
+            daySum = 2;
+        }
+        if (delDist >= 60 && delDist < 100) {
+            daySum = 3;
+        }
+            return daySum;
     }
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -57,7 +53,7 @@ public class Main {
         installationOfTheApplication(clientOs, clientDeviceYear);
 //Задание №3
         System.out.println("Задание №3");
-        int deliveryDistance = 100;
+        int deliveryDistance = 90;
         int daysOfDelivery = deliveryTime(deliveryDistance);
         if (daysOfDelivery != 0) {
             System.out.println("Потребуется дней: " + daysOfDelivery);
